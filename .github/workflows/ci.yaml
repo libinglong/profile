@@ -16,6 +16,9 @@ jobs:
       - name: Execute Gradle build
         run: sh gradlew asciidoctor
 
+      - name: generate .nojekyll
+        run: touch build/docs/asciidoc/.nojekyll
+
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
