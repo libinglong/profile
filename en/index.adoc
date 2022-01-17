@@ -1,0 +1,120 @@
+== 基本信息
+
+* 姓名 李炳⻰
+* 毕业院校 南京邮电大学
+* 学历 本科
+* 电话 15620011679
+* 邮箱 2376771274@qq.com
+
+== 开源社区贡献
+
+* 分布式链路追踪Apache Skywalking
+
++
+--
+https://skywalking.apache.org/blog/2021-02-09-skywalking-trace-threadpool/[英文技术文章-如何在skywalking中增强ThreadPoolExecutor]
+
+https://github.com/apache/skywalking/pull/5158[修复-Apache Skywalking agent内核在某些机器中因并发错误无法正常运行的问题]
+
+https://github.com/apache/skywalking/pull/6103[增加特性-多版本兼容-方法级别的粒度]
+
+https://github.com/apache/skywalking/pull/6309[增加特性-添加错误监听，方便插件开发人员定位错误]
+--
+
+* Fastjson
++
+--
+https://github.com/alibaba/fastjson/pull/2184[修复fastjson序列化错误]
+--
+
+* manim 3blue1brown开源的数学动画制作软件
++
+--
+https://github.com/3b1b/manim/pull/1481[manim latex格式化错误]
+https://github.com/3b1b/manim/pull/1488[manim 文档代码与视频演示不匹配]
+--
+
+* reactor-core
++
+https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
+
+
+== 文章
+
+发表于"搜狐产品技术"，并获得了稿酬(500元/篇)
+
+* https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
+* https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
+//* 技术总结 TODO
+
+== 技术
+
+=== sdk自研
+* md-cache 基于注解的缓存，相比springboot注重一致性，性能
+* zk配置中心自动装配，为了实现无缝迁移
+* audio 文字转语音tts服务
+* skywalking插件
+* gateway定制化开发
+** 实现修改路由配置后所有节点实时生效
+** 路由查询功能
+** 防篡改，防重放过滤器
+
+=== sdk整合
+* sharding-jdbc
+* maxwell-docker mysql bin-log同步器
+* spring-cloud配置中心
+* feign-client
+* sharding-proxy docker
+
+=== devops
+* 缓存maven组件加快编译速度
+* 基于gitlab ci/cd的持续交付
+* 基于docker in docker技术编译
+* 使用docker运行服务
+* mysql分库分表ShardingSphere基础设施搭建
+* 链路追踪skywalking落地
+
+=== 性能调优的一些经历
+* cms gc达4s左右 c3p0配置错误
+* logback 0点同步删除日志导致大量线程在synchronized处阻塞 低版本logback性能问题，日志滚动策略的实现中，删除日志是同步的，如果日志非常大，则 造成全应用日志都阻塞，影响非常严重。
+* redis偶现慢查询导致的接口超时 无法使用缓存优化耗时，发现是缓存中间件本身出现了问题。
+* netty线程模型使用不当导致的接口超时 仅使用了boss线程，worker线程两组线程池，且在worker线程中处理可能阻塞的任务。
+* 撤销偏向锁导致的应用程序stop the world时间达1s以上 线程竞争激烈，撤销偏向锁的开销已经远大于偏向锁带来的收益。 线程池创建bug导致的young gc时间持续缓慢增加，最终系统响应缓慢，进程被系统kill
+
+== 工作经历 2021-7至今
+
+=== 贝壳找房
+基于springboot的keboot框架开发与维护，k8s operator开发
+
+
+=== 搜狐 2018.7-2021-7
+
+==== 搜狐新闻app
+搜狐新闻主app。 负责内容：用户与设备，用户关注关系，feed及转评赞，听新闻
+
+image:images/structure.png[听新闻架构图]
+
+==== 狐狸金服app
+
+狐狸慧贷服务(app接口)，房进件服务(h5接口)，房产询值服务，saas业务
+
+* gateway网关
+** oauth2 认证授权
+
+* 房产询值
+** springboot + selenium(浏览器测试框架用于内容爬取)
+* 进件服务，狐狸慧贷服务
+
+=== 中软国际 2018.1-2018.7
+* 华为手机自动化测试框架及脚本开发 cida任务管理
+* lcm机器管理
+
+=== 天津联通 2016.7-2018.1
+腾讯王卡，百度神卡等各种流量卡的订单系统开发与维护
+
+== 教育经历
+* 本科 2012.9-2016.6 南京邮电大学 电子信息工程
+* 高中 2009.9-2012.6 河北省沧县中学
+
+== 个人爱好
+唱歌，网球，读书
