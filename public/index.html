@@ -526,15 +526,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>发表于"搜狐产品技术"，并获得了稿酬(500元/篇)</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw">java史诗级低时延性能调优1</a></p>
-</li>
-<li>
-<p><a href="https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA">java史诗级低延迟性能调优2</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>*
+* <a href="https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw">java史诗级低时延性能调优1</a>
+* <a href="https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA">java史诗级低延迟性能调优2</a></p>
 </div>
 </div>
 </div>
@@ -623,28 +618,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_性能调优的一些经历">性能调优的一些经历</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>cms gc达4s左右 c3p0配置错误</p>
-</li>
-<li>
-<p>logback 0点同步删除日志导致大量线程在synchronized处阻塞 低版本logback性能问题，日志滚动策略的实现中，删除日志是同步的，如果日志非常大，则 造成全应用日志都阻塞，影响非常严重。</p>
-</li>
-<li>
-<p>redis偶现慢查询导致的接口超时 无法使用缓存优化耗时，发现是缓存中间件本身出现了问题。</p>
-</li>
-<li>
-<p>netty线程模型使用不当导致的接口超时 仅使用了boss线程，worker线程两组线程池，且在worker线程中处理可能阻塞的任务。</p>
-</li>
-<li>
-<p>撤销偏向锁导致的应用程序stop the world时间达1s以上 线程竞争激烈，撤销偏向锁的开销已经远大于偏向锁带来的收益。 线程池创建bug导致的young gc时间持续缓慢增加，最终系统响应缓慢，进程被系统kill</p>
-</li>
-</ul>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -652,8 +625,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_贝壳找房">贝壳找房</h3>
-<div class="paragraph">
-<p>基于springboot的keboot框架开发与维护，k8s operator开发</p>
+<div class="ulist">
+<ul>
+<li>
+<p>基于springboot的keboot框架开发与维护</p>
+</li>
+<li>
+<p>k8s operator开发</p>
+</li>
+<li>
+<p>trace维护</p>
+</li>
+<li>
+<p>应用上云客服问题</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -748,7 +734,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-17 14:57:42 +0800
+Last updated 2022-01-17 16:37:00 +0800
 </div>
 </div>
 </body>

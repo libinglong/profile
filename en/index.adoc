@@ -43,6 +43,7 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 
 发表于"搜狐产品技术"，并获得了稿酬(500元/篇)
 
+*
 * https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
 * https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
 //* 技术总结 TODO
@@ -74,17 +75,13 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 * mysql分库分表ShardingSphere基础设施搭建
 * 链路追踪skywalking落地
 
-=== 性能调优的一些经历
-* cms gc达4s左右 c3p0配置错误
-* logback 0点同步删除日志导致大量线程在synchronized处阻塞 低版本logback性能问题，日志滚动策略的实现中，删除日志是同步的，如果日志非常大，则 造成全应用日志都阻塞，影响非常严重。
-* redis偶现慢查询导致的接口超时 无法使用缓存优化耗时，发现是缓存中间件本身出现了问题。
-* netty线程模型使用不当导致的接口超时 仅使用了boss线程，worker线程两组线程池，且在worker线程中处理可能阻塞的任务。
-* 撤销偏向锁导致的应用程序stop the world时间达1s以上 线程竞争激烈，撤销偏向锁的开销已经远大于偏向锁带来的收益。 线程池创建bug导致的young gc时间持续缓慢增加，最终系统响应缓慢，进程被系统kill
-
 == 工作经历 2021-7至今
 
 === 贝壳找房
-基于springboot的keboot框架开发与维护，k8s operator开发
+* 基于springboot的keboot框架开发与维护
+* k8s operator开发
+* trace维护
+* 应用上云客服问题
 
 
 === 搜狐 2018.7-2021-7
