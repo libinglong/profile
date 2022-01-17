@@ -1,0 +1,51 @@
+plugins {
+	id "org.asciidoctor.jvm.convert" version '3.3.2'
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.lbl.wiki'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	maven {
+		url "https://repo.spring.io/release"
+	}
+}
+
+configurations {
+	asciidoctorExtensions
+}
+
+processResources {
+	dependsOn(asciidoctor)
+	from ('build/docs/asciidoc') {
+		into 'public'
+	}
+}
+
+asciidoctor {
+	configurations "asciidoctorExtensions"
+	baseDirFollowsSourceFile()
+	baseDirFollowsSourceDir()
+	sources {
+		include "*.adoc"
+	}
+	outputOptions {
+		backends "spring-html"
+	}
+}
+
+dependencies {
+	asciidoctorExtensions "io.spring.asciidoctor.backends:spring-asciidoctor-backends:0.0.2"
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}

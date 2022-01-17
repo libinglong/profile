@@ -43,7 +43,6 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 
 发表于"搜狐产品技术"，并获得了稿酬(500元/篇)
 
-*
 * https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
 * https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
 //* 技术总结 TODO
