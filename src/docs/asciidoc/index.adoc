@@ -1,4 +1,4 @@
-:toc:
+include::attributes.adoc[]
 == 基本信息
 
 * 姓名 李炳龙
