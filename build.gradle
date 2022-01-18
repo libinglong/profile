@@ -32,7 +32,7 @@ asciidoctor {
 	baseDirFollowsSourceFile()
 	baseDirFollowsSourceDir()
 	sources {
-		include "*.adoc"
+		include "**/index.adoc"
 	}
 	outputOptions {
 		backends "spring-html"

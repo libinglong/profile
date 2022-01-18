@@ -1,12 +1,16 @@
-include::attributes.adoc[]
+include::../attributes.adoc[]
+
+link:../en/index.adoc[English Resume]
 
 == 基本信息
 
 * 姓名 李炳龙
-* 毕业院校 南京邮电大学
-* 学历 本科
 * 电话 15620011679
 * 邮箱 2376771274@qq.com
+
+== 教育经历
+* 本科 2012.9-2016.6 南京邮电大学 电子信息工程
+* 高中 2009.9-2012.6 河北省沧县中学
 
 == 开源社区贡献
 
@@ -14,7 +18,7 @@ include::attributes.adoc[]
 
 +
 --
-https://skywalking.apache.org/blog/2021-02-09-skywalking-trace-threadpool/[英文技术文章-如何在skywalking中增强ThreadPoolExecutor]
+https://skywalking.apache.org/blog/2021-02-09-skywalking-trace-threadpool/[How to propagate context between threads when using ThreadPoolExecutor]
 
 https://github.com/apache/skywalking/pull/5158[修复-Apache Skywalking agent内核在某些机器中因并发错误无法正常运行的问题]
 
@@ -44,7 +48,7 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 == 文章
 
 === 个人github pages
-作为一个老码农，多年的技术经验总结，使用gradle + github ci + github page分享到互联网，不断完善中
+个人技术经验总结，使用github page分享到互联网，不断完善中
 
 https://libinglong.github.io/wiki-personal[戳此查看]
 
@@ -114,10 +118,6 @@ image:images/structure.png[听新闻架构图]
 
 === 天津联通 2016.7--2018.1
 腾讯王卡，百度神卡等各种流量卡的订单系统开发与维护
-
-== 教育经历
-* 本科 2012.9-2016.6 南京邮电大学 电子信息工程
-* 高中 2009.9-2012.6 河北省沧县中学
 
 == 个人爱好
 唱歌，网球，读书

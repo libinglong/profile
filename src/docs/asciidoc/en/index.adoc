@@ -1,0 +1,107 @@
+include::../attributes.adoc[]
+
+link:../zh/index.adoc[中文简历]
+
+== Personal Details
+
+* NAME Li Binglong
+* TEL 15620011679
+* EMAIL 2376771274@qq.com
+
+== Education
+[%hardbreaks]
+Bachelors Degree
+Major in Electronic Information Engineering
+2012.9-2016.6
+Nanjing University of Posts and Telecommunications
+
+== Open Source Contribution
+
+* Apache SkyWalking
+
++
+--
+https://skywalking.apache.org/blog/2021-02-09-skywalking-trace-threadpool/[How to propagate context between threads when using ThreadPoolExecutor]
+
+https://github.com/apache/skywalking/pull/5158[Fix:Concurrent accessing allJars causes the plugin to fail to load]
+
+https://github.com/apache/skywalking/pull/6103[New feature:Add witness method]
+
+https://github.com/apache/skywalking/pull/6309[New feature:Add redefine listener]
+--
+
+* Fastjson
++
+--
+https://github.com/alibaba/fastjson/pull/2184[Fix:Serialization error]
+--
+
+* manim
++
+--
+An engine for precise programmatic animations by 3blue1brown
+
+https://github.com/3b1b/manim/pull/1481[manim latex format error]
+
+https://github.com/3b1b/manim/pull/1488[manim document error]
+--
+
+* reactor-core
++
+https://github.com/reactor/reactor-core/pull/2449[Fix:typographical error]
+
+
+== Article
+
+=== My GitHub Pages
+
+https://libinglong.github.io/wiki-personal[click here to view]
+
+=== Published Article
+Publish on SoHu Technology WeChat Official Accounts
+
+* https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java performance case1]
+* https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java performance case2]
+
+== Skills
+Java,Spring Framework,SpringBoot,Gitlab CI/CD,Docker,K8s
+
+
+== Work Experience
+
+=== BEKE 2021.7 to present
+* KeBoot based SpringBoot
+* k8s operator
+* Apache SkyWalking Trace
+
+
+=== SoHu 2018.7--2021.7
+
+==== SoHu News App
+SoHu News Main App.
+
+. User and devices.
+. User relations.
+. User feeds.
+. Listening to news.
+
+==== SoHu Loan App
+
+* gateway
+** oauth2
+
+* value of houses service
+** springboot + selenium
+* loan service
+
+=== Chinasoft International Limited 2018.1--2018.7
+* Mobile Auto Test Framework
+* Mobile Devices Management
+
+=== China Unicom In TianJin 2016.7--2018.1
+Mobile Card Sale Web
+
+== Interests
+. Singing
+. Reading
+. Tennis
