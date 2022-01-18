@@ -14,7 +14,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Execute Gradle build
-        run: sh gradlew asciidoctor
+        run: sh gradlew clean asciidoctor
 
       - name: generate .nojekyll
         run: touch build/docs/asciidoc/.nojekyll
