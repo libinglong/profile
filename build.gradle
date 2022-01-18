@@ -30,7 +30,6 @@ processResources {
 asciidoctor {
 	configurations "asciidoctorExtensions"
 	baseDirFollowsSourceFile()
-	baseDirFollowsSourceDir()
 	sources {
 		include "**/index.adoc"
 	}

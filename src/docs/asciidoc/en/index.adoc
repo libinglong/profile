@@ -1,6 +1,6 @@
 include::../attributes.adoc[]
 
-link:../zh/index.adoc[中文简历]
+link:../zh/index.html[中文简历]
 
 == Personal Details
 

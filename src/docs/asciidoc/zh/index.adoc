@@ -1,6 +1,6 @@
 include::../attributes.adoc[]
 
-link:../en/index.adoc[English Resume]
+link:../en/index.html[English Resume]
 
 == 基本信息
 
