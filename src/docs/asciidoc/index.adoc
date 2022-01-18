@@ -43,13 +43,18 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 
 == 文章
 
+=== 个人github pages
+作为一个老码农，多年的技术经验总结，使用gradle + github ci + github page分享到互联网，不断完善中
+
+https://libinglong.github.io/wiki-personal[戳此查看]
+
+=== 技术网站发表
 发表于"搜狐产品技术"，并获得了稿酬(500元/篇)
 
 * https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
 * https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
-//* 技术总结 TODO
 
-== 技术
+== 个人技术栈
 
 === sdk自研
 * md-cache 基于注解的缓存，相比springboot注重一致性，性能
