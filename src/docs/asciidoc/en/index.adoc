@@ -5,7 +5,7 @@ link:../zh/index.html[中文简历]
 == Personal Details
 
 * NAME Li Binglong
-* TEL 15620011679
+* TEL +8615620011679
 * EMAIL 2376771274@qq.com
 
 == Education
