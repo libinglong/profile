@@ -1,5 +1,7 @@
 include::../attributes.adoc[]
 
+link:../zh/index.html[中文简历]
+
 == Personal Details
 
 * NAME Li Binglong
@@ -103,5 +105,3 @@ Mobile Card Sale Web
 . Singing
 . Reading
 . Tennis
-
-== link:../zh/index.html[中文简历]

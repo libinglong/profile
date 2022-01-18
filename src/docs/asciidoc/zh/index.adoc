@@ -1,5 +1,7 @@
 include::../attributes.adoc[]
 
+link:../en/index.html[English Resume]
+
 == 基本信息
 
 * 姓名 李炳龙
@@ -119,5 +121,3 @@ image:images/structure.png[听新闻架构图]
 
 == 个人爱好
 唱歌，网球，读书
-
-== link:../en/index.html[English Resume]
