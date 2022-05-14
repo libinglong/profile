@@ -48,6 +48,9 @@ link:https://www.libinglong.tech/blogs[个人博客]
 
 === 贝壳找房 2021.7--今(10个月)
 * 基于SpringBoot的Keboot框架开发与维护
+* jvm治理
++
+image::../images/image-2022-05-14-23-37-11-500.png[]
 * 应用构建系统设计与开发
 +
 image::../images/image-2022-05-14-13-15-06-660.png[]
