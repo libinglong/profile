@@ -9,8 +9,78 @@ link:../en/index.html[English Resume]
 * 邮箱 2376771274@qq.com
 
 == 教育经历
-* 本科 2012.9-2016.6 南京邮电大学 电子信息工程
+* 本科 2012.9-2016.6 南京邮电大学(双一流) 电子信息工程
 * 高中 2009.9-2012.6 河北省沧县中学
+
+== 个人技术栈
+主要开发语言java。go，python，js也有开发能力
+
+link:https://www.libinglong.tech/blogs[个人博客]
+
+. java方面的能力是很强的
+. 有一定的前端开发能力
+. 熟悉docker k8s等云原生相关技术栈
+
+=== 一些二次开发或自研的中间件
+* md-cache 基于注解的缓存，相比Springboot注重一致性，性能
+* Skywalking跨线程插件
+* gateway定制化开发
+** 实现修改路由配置后所有节点实时生效
+** 路由查询功能
+** 防篡改，防重放过滤器
+
+=== sdk整合
+* sharding-jdbc
+* maxwell-docker mysql bin-log同步器
+* spring-cloud配置中心
+* feign-client
+* sharding-proxy docker
+
+=== devops
+* 缓存maven组件加快编译速度
+* 基于gitlab ci/cd的持续交付
+* 基于docker in docker技术编译
+* 使用docker运行服务
+* mysql分库分表ShardingSphere基础设施搭建
+* 链路追踪Skywalking落地
+
+== 工作经历
+
+=== 贝壳找房 2021.7--今(10个月)
+* 基于SpringBoot的Keboot框架开发与维护
+* 应用构建系统设计与开发
++
+image::images/image-2022-05-14-13-15-06-660.png[]
+
+
+=== 搜狐 2018.7--2021.7(3年)
+
+==== 搜狐新闻app
+搜狐新闻主app。 负责内容：用户与设备，用户关注关系，feed及转评赞，听新闻
+
+image::images/image-2022-05-14-13-07-53-308.png[]
+
+==== 狐狸金服app
+
+狐狸慧贷服务(app接口)，房进件服务(h5接口)，房产询值服务，saas业务
+
+* gateway网关
+** oauth2 认证授权
+
+* 房产询值
+** SpringBoot + Selenium(浏览器测试框架用于内容爬取)
+* 进件服务，狐狸慧贷服务
+
+=== 中软国际 2018.1--2018.7(7个月)
+* 华为手机自动化测试框架及脚本开发 cida任务管理
+* lcm机器管理
+
+=== 天津联通 2016.7--2018.1(1年)
+腾讯王卡，百度神卡等各种流量卡的订单系统开发与维护
+
+== 个人爱好
+唱歌，网球，读书
+
 
 == 开源社区贡献
 
@@ -47,77 +117,7 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 
 == 文章
 
-=== 个人github pages
-个人技术经验总结，使用github page分享到互联网，不断完善中
-
-https://libinglong.github.io/wiki-personal[戳此查看]
-
-=== 技术网站发表
 发表于"搜狐产品技术"，并获得了稿酬(500元/篇)
 
 * https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
 * https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
-
-== 个人技术栈
-
-=== sdk自研
-* md-cache 基于注解的缓存，相比springboot注重一致性，性能
-* zk配置中心自动装配，为了实现无缝迁移
-* audio 文字转语音tts服务
-* skywalking插件
-* gateway定制化开发
-** 实现修改路由配置后所有节点实时生效
-** 路由查询功能
-** 防篡改，防重放过滤器
-
-=== sdk整合
-* sharding-jdbc
-* maxwell-docker mysql bin-log同步器
-* spring-cloud配置中心
-* feign-client
-* sharding-proxy docker
-
-=== devops
-* 缓存maven组件加快编译速度
-* 基于gitlab ci/cd的持续交付
-* 基于docker in docker技术编译
-* 使用docker运行服务
-* mysql分库分表ShardingSphere基础设施搭建
-* 链路追踪skywalking落地
-
-== 工作经历
-
-=== 贝壳找房 2021.7--今
-* 基于springboot的keboot框架开发与维护
-* k8s operator开发
-* trace维护
-* 应用上云客服问题
-
-
-=== 搜狐 2018.7--2021.7
-
-==== 搜狐新闻app
-搜狐新闻主app。 负责内容：用户与设备，用户关注关系，feed及转评赞，听新闻
-
-image:images/structure.png[听新闻架构图]
-
-==== 狐狸金服app
-
-狐狸慧贷服务(app接口)，房进件服务(h5接口)，房产询值服务，saas业务
-
-* gateway网关
-** oauth2 认证授权
-
-* 房产询值
-** springboot + selenium(浏览器测试框架用于内容爬取)
-* 进件服务，狐狸慧贷服务
-
-=== 中软国际 2018.1--2018.7
-* 华为手机自动化测试框架及脚本开发 cida任务管理
-* lcm机器管理
-
-=== 天津联通 2016.7--2018.1
-腾讯王卡，百度神卡等各种流量卡的订单系统开发与维护
-
-== 个人爱好
-唱歌，网球，读书
