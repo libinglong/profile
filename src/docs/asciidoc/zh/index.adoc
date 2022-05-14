@@ -50,7 +50,7 @@ link:https://www.libinglong.tech/blogs[个人博客]
 * 基于SpringBoot的Keboot框架开发与维护
 * 应用构建系统设计与开发
 +
-image::images/image-2022-05-14-13-15-06-660.png[]
+image::../images/image-2022-05-14-13-15-06-660.png[]
 
 
 === 搜狐 2018.7--2021.7(3年)
@@ -58,7 +58,7 @@ image::images/image-2022-05-14-13-15-06-660.png[]
 ==== 搜狐新闻app
 搜狐新闻主app。 负责内容：用户与设备，用户关注关系，feed及转评赞，听新闻
 
-image::images/image-2022-05-14-13-07-53-308.png[]
+image::../images/image-2022-05-14-13-07-53-308.png[]
 
 ==== 狐狸金服app
 
