@@ -27,3 +27,4 @@ jobs:
           build_dir: build/docs/asciidoc
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
