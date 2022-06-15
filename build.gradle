@@ -38,8 +38,20 @@ asciidoctor {
 	}
 }
 
+task asciidoctorPdf(type: org.asciidoctor.gradle.jvm.AsciidoctorTask) {
+	configurations "asciidoctorExtensions"
+	baseDirFollowsSourceFile()
+	sources {
+		include "**/index.adoc"
+	}
+	outputOptions {
+		backends "spring-pdf"
+	}
+}
+
 dependencies {
 	asciidoctorExtensions "io.spring.asciidoctor.backends:spring-asciidoctor-backends:0.0.2"
+	asciidoctorExtensions "org.asciidoctor:asciidoctorj-pdf:1.5.3"
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
