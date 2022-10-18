@@ -9,11 +9,35 @@ link:../en/index.html[English Resume]
 * 邮箱 2376771274@qq.com
 
 == 教育经历
-* 本科 2012.9-2016.6 南京邮电大学(双一流) 电子信息工程
+* 本科 2012.9-2016.6 南京邮电大学 电子信息工程
 * 高中 2009.9-2012.6 河北省沧县中学
 
-== 个人技术栈
-主要开发语言java。go，python，js也有开发能力
+== 个人介绍
+本人自毕业后，一直致力于web领域的开发，至今有大约6年了。最初我只在java方面深有研究，但随着外界技术的不断演化，我也不断接触一些新的知识，如docker，kubernetes。在搜狐的几年，我开始真正做一些容器化和devops上的事情，希望在这个方向有所发展，后来则进入贝壳基础架构部。在这个部门，开始了真正的devops&容器化研发的道路。以下领域，是我足够擅长的，并能以一己之力完成领域内的任何目标的。
+
+* ci
++
+贝壳的一款ci服务是我从零搭建的，可扩展性很高，目前贝壳存在4款ci产品，不只一次出现这种情况，当其他ci产品都无法满足需求的时候，会找到我的产品进行支持。
+
+* cd
++
+贝壳的cd并不是我做的，但是我是主要维护人之一
+
+* 服务治理
+** 摘流
++
+服务治理的事情较多，只说和cd相关的摘流，包括eureka，dubbo等服务的摘流，以及apisix(或其他)网关的摘流
+
+* api路由建设，包括但不限于
+** 统一登录
+** api鉴权
+** cdn设计
+** 基于域名的路由可视化
+** 多k8s集群的路由同步器(非完整的流量跨集群方案)
+
+* 基于api路由的前端devops设计
++
+贝壳的前端devops是我精心设计的一款新的服务搭建与发版方案，并移除了多项繁琐的流程以及工单，用了都说好。
 
 link:https://www.libinglong.tech/blogs[个人博客]
 
@@ -21,32 +45,9 @@ link:https://www.libinglong.tech/blogs[个人博客]
 . 有一定的前端开发能力
 . 熟悉docker k8s等云原生相关技术栈
 
-=== 一些二次开发或自研的中间件
-* md-cache 基于注解的缓存，相比Springboot注重一致性，性能
-* Skywalking跨线程插件
-* gateway定制化开发
-** 实现修改路由配置后所有节点实时生效
-** 路由查询功能
-** 防篡改，防重放过滤器
-
-=== sdk整合
-* sharding-jdbc
-* maxwell-docker mysql bin-log同步器
-* spring-cloud配置中心
-* feign-client
-* sharding-proxy docker
-
-=== devops
-* 缓存maven组件加快编译速度
-* 基于gitlab ci/cd的持续交付
-* 基于docker in docker技术编译
-* 使用docker运行服务
-* mysql分库分表ShardingSphere基础设施搭建
-* 链路追踪Skywalking落地
-
 == 工作经历
 
-=== 贝壳找房 2021.7--今(10个月)
+=== 贝壳找房 2021.7--今 容器化研发 & devops研发 & java 开源sdk维护
 * 基于SpringBoot的Keboot框架开发与维护
 * jvm治理
 +
@@ -60,7 +61,12 @@ image::../images/image-2022-05-14-23-37-11-500.png[]
 image::../images/image-2022-05-14-13-15-06-660.png[]
 
 
-=== 搜狐 2018.7--2021.7(3年)
+* 前端应用devops流程设计
++
+该系统打通了应用ci/cd,负载申请，cdn申请等多个流程，并新增了路由可视化，秒级回退，统一登录鉴权等多项功能。将前端的研发效率提高到了一个前所未有的新水平。
+
+
+=== 搜狐 2018.7--2021.7 业务研发 & devops
 
 ==== 搜狐新闻app
 搜狐新闻主app。 负责内容：用户与设备，用户关注关系，feed及转评赞，听新闻
@@ -69,7 +75,7 @@ image::../images/image-2022-05-14-13-15-06-660.png[]
 
 image::../images/image-2022-05-14-13-07-53-308.png[]
 
-==== 狐狸金服app
+==== 狐狸金服app 高级研发工程师
 
 狐狸慧贷服务(app接口)，房进件服务(h5接口)，房产询值服务，saas业务
 
@@ -80,11 +86,11 @@ image::../images/image-2022-05-14-13-07-53-308.png[]
 ** SpringBoot + Selenium(浏览器测试框架用于内容爬取)
 * 进件服务，狐狸慧贷服务
 
-=== 中软国际 2018.1--2018.7(7个月)
+=== 中软国际 2018.1--2018.7 研发工程师
 * 华为手机自动化测试框架及脚本开发 cida任务管理
 * lcm机器管理
 
-=== 天津联通 2016.7--2018.1(1年)
+=== 天津联通 2016.7--2018.1 研发工程师
 腾讯王卡，百度神卡等各种流量卡的订单系统开发与维护
 
 == 个人爱好
@@ -130,3 +136,30 @@ https://github.com/reactor/reactor-core/pull/2449[修复拼写错误]
 
 * https://mp.weixin.qq.com/s/joqGDKqg69V7ytoAcFEkxw[java史诗级低时延性能调优1]
 * https://mp.weixin.qq.com/s/gpon4FCZnu47n2NlFbeMmA[java史诗级低延迟性能调优2]
+
+
+
+=== 一些二次开发或自研的中间件
+* md-cache 基于注解的缓存，相比Springboot注重一致性，性能
+* Skywalking跨线程插件(完全无侵入)
+* gateway定制化开发
+** 实现修改路由配置后所有节点实时生效
+** 路由查询功能
+** 防篡改，防重放过滤器
+** 统一登录
+** 轻量级加密
+
+=== sdk整合
+* sharding-jdbc
+* maxwell-docker mysql bin-log同步器
+* spring-cloud配置中心
+* feign-client
+* sharding-proxy docker
+
+=== devops
+* 缓存maven组件加快编译速度
+* 基于gitlab ci/cd的持续交付
+* 基于docker in docker技术编译
+* 使用docker运行服务
+* mysql分库分表ShardingSphere基础设施搭建
+* 链路追踪Skywalking落地
